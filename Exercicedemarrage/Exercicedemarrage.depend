@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1732977184 source:c:\users\extra\onedrive\bureau\projet c\exercicedemarrage\etudiant.c
+	"Etudiant.h"
+	<stdio.h>
+	<string.h>
+
+1732284362 c:\users\extra\onedrive\bureau\projet c\exercicedemarrage\etudiant.h
+
+1733003128 source:c:\users\extra\onedrive\bureau\projet c\exercicedemarrage\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Etudiant.h"
+	<string.h>
+	<time.h>
+
