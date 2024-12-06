@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1733496726 source:c:\users\extra\onedrive\bureau\projet c\etudiantdynamique\etudiantcopie\main.c
+	<stdio.h>
+	<stdlib.h>
+	"etudiant.h"
+	<string.h>
+	<time.h>
+
+1733496343 c:\users\extra\onedrive\bureau\projet c\etudiantdynamique\etudiantcopie\etudiant.h
+
+1733496283 source:c:\users\extra\onedrive\bureau\projet c\etudiantdynamique\etudiantcopie\etudiant.c
+	"etudiant.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
