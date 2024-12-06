@@ -8,8 +8,8 @@ extern int taille_tab;
 
 Etudiant saisir_etd(){
 	Etudiant etd;
-	int i;
-	int rech;
+	//int i;
+	//int rech;
     /*do
 	{printf("\n introduire l'identifiant : ");
 	scanf("%d",&etd.identifiant);
@@ -18,7 +18,8 @@ Etudiant saisir_etd(){
         printf("\n Identifiant existe d%cjà!!\n",130);
     }
 	}while(rech!=-1);*/
-
+    printf("\n introduire l'identifiant : ");
+	scanf("%d",&etd.identifiant);
 	printf("\n introduire le nom: ");
 	fflush(stdin);
 	gets(etd.Nom);
@@ -80,7 +81,7 @@ void modifier_etd(Etudiant *etd){
             {printf(" \nIntroduire la note:");
             scanf("%f",&etd->Notes[0]);
             if(etd->Notes[0]<0 || etd->Notes[0]>20){
-                printf("\ Note %crron%ce !! : 0<note<20:\n",130,130);
+                printf("\n Note %crron%ce !! : 0<note<20:\n",130,130);
             }
             }while(etd->Notes[0]<0 || etd->Notes[0]>20);
             break;
@@ -90,7 +91,7 @@ void modifier_etd(Etudiant *etd){
             {printf(" \nIntroduire la note:");
             scanf("%f",&etd->Notes[1]);
             if(etd->Notes[1]<0 || etd->Notes[1]>20){
-                printf("\ Note %crron%ce !! : 0<note<20:\n",130,130);}
+                printf("\n Note %crron%ce !! : 0<note<20:\n",130,130);}
             }while(etd->Notes[1]<0 || etd->Notes[1]>20);
             break;
         }
@@ -100,7 +101,7 @@ void modifier_etd(Etudiant *etd){
              {printf(" \nIntroduire la note:");
             scanf("%f",&etd->Notes[2]);
             if(etd->Notes[2]<0 || etd->Notes[2]>20){
-                printf("\ Note %crron%ce !! : 0<note<20:\n",130,130);
+                printf("\n Note %crron%ce !! : 0<note<20:\n",130,130);
             }
             }while(etd->Notes[2]<0 || etd->Notes[2]>20);
             break;
@@ -110,7 +111,7 @@ void modifier_etd(Etudiant *etd){
             {printf(" \nIntroduire la note:");
             scanf("%f",&etd->Notes[3]);
             if(etd->Notes[3]<0 || etd->Notes[3]>20){
-                printf("\ Note %crron%ce !! : 0<note<20:\n",130,130);}
+                printf("\n Note %crron%ce !! : 0<note<20:\n",130,130);}
             }while(etd->Notes[3]<0 || etd->Notes[3]>20);
             break;}
         default:{

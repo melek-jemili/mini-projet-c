@@ -15,24 +15,24 @@ int main()
     char rep[3];
 	Etudiant etd;
 	struct cellule* courrant;
-	/*FILE* fichier;*/
+	FILE* fichier;
 	time_t seconde;
     struct tm instant;
     time(&seconde);
     instant=*localtime(&seconde);
-    /*fichier=fopen("note.txt","rt");
+    fichier=fopen("note.txt","rt");
     if (fichier=NULL){
         printf("\n fichier inéxistant !!!");
     }else{
-        for (i=0;i<taille_tab;i++){
-                fscanf(fichier,"%d\n",&courrant->valeur.identifiant);
-                fgets(courrant->valeur.Nom,25,fichier);
-                fgets(tableau_etd[i].Prenom,25,fichier);
-                fscanf(fichier,"%f %f %f %f\n",&courrant->valeur.Notes[0],&courrant->valeur.Notes[1],&courrant->valeur.Notes[2],&courrant->valeur.Notes[3]);
-
+        while(!feof(fichier)){
+                fscanf(fichier,"%d\n",&etd.identifiant);
+                fgets(etd.Nom,25,fichier);
+                fgets(etd.Prenom,25,fichier);
+                fscanf(fichier,"%f %f %f %f\n",&etd.Notes[0],&etd.Notes[1],&etd.Notes[2],&etd.Notes[3]);
+                Liste_etd=insere(etd,Liste_etd);
         }
 
-    }*/
+    }
 
 	while (1)
 	{   printf("\n****************************");
@@ -56,8 +56,8 @@ int main()
                 do
                 {etd=saisir_etd();
                 Liste_etd=insere(etd,Liste_etd);
-                printf("\n Voulez-vous ajouter un autre étudiant? oui/non:");
-                fscanf("%s",rep);
+                printf("\n Voulez-vous ajouter un autre étudiant?uioui/non:");
+                scanf("%s",rep);
                 }while(strcmp(rep,"oui")==0);
                 break;
             }
@@ -119,7 +119,7 @@ int main()
                     fclose(fichier);
                 }
                 exit(0);
-            }
+
         default:
             {
                 printf("\n Choix érroné!!");
